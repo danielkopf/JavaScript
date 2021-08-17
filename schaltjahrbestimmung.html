@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Schaltjahrbestimmung</title>
+    </head>
+    <body>
+        <script>
+            "use strict"
+          var jahr = parseInt(prompt("Bitte geben Sie ein Jahr in JJJJ an"));
+          if ((jahr%4 == 0 && jahr%100 !=0) || jahr%400 == 0) {
+              document.write(`${jahr} ist ein Schaltjahr`);
+          } else {
+              document.write(`${jahr} ist kein Schaltjahr`);
+          }
+        </script>
+    </body>
+</html>

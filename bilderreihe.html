@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bilderreihe</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <p id="c1"></p>
+        <script>
+            var s = ""
+            for ( var x = 0; x < 150; x += 20){
+               s += `<img src="../001.jpg" alt="Smiley face" width="${x}">`
+               document.getElementById("c1").innerHTML = s;
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tage des Monats</title>
+    </head>
+    <body>
+        <script>
+            "use strict"
+          var jahr = parseInt(prompt("Bitte geben Sie ein Jahr in JJJJ an"));
+          var monat = parseInt(prompt("Bitte geben Sie einen Monat in MM an"));
+          if (((jahr%4 == 0 && jahr%100 !=0) || jahr%400 == 0) && monat == 2 ){
+              document.write(`Der Februar im Jahr ${jahr} hat 29 Tage`);
+          } else {
+              var m = "";
+            switch(monat) {
+                case 1: m = "Januar"; var tag = 31; break;
+                case 2: m = "Februar"; var tag = 28; break;
+                case 3: m = "März"; var tag = 31; break;
+                case 4: m = "April"; var tag = 30; break;
+                case 5: m = "Mai"; var tag = 31; break;
+                case 6: m = "Juni"; var tag = 30; break;
+                case 7: m = "Juli"; var tag = 31; break;
+                case 8: m = "August"; var tag = 31; break;
+                case 9: m = "September"; var tag = 30; break;
+                case 10: m = "Oktober"; var tag = 31; break;
+                case 11: m = "November"; var tag = 30; break;
+                case 12: m = "Dezember"; var tag = 31; break;
+                default: alert("error"); break;
+            }
+              document.write(`Das Jahr ${jahr} mit dem Monat ${m} hat ${tag} Tage.`);
+          }
+        </script>
+    </body>
+</html>

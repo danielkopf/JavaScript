@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pi nach Leibniz</title>
+    </head>
+    <body>
+        <p id="c1"></p>
+        <script>
+            "use strict"
+          var n = 3, pi = 1;
+          var max = prompt("Bis zu welchem n soll gerechnet werden:");
+          while (n < max) {
+              pi = pi - (1/n) + (1/(n+2));
+              n += 4;
+          }
+          var s = `n=${n}:${pi * 4}`;
+          document.getElementById("c1").innerHTML = s;
+        </script>
+    </body>
+</html>

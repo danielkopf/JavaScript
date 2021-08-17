@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Durchschnittsberechnung</title>
+    </head>
+    <body>
+        <p id="c1"></p>
+        <script>
+            "use strict"
+            var anz = parseInt(prompt("Anzahl der Werte"));
+            var werte = [];
+            for (var i = 0; i < anz; ++i){
+                werte.push(parseFloat(prompt(`Bitte Wert${i+1} eingeben:`)));
+            }
+
+            var durch = 0;
+            for (var i = 0; i < anz; ++i){
+                durch += werte[i];
+            }
+            durch /= anz;
+            var s = `Der Durchschnittswert beträgt ${durch}.`;
+            document.getElementById("c1").innerHTML = s;
+        </script>
+    </body>
+</html>
